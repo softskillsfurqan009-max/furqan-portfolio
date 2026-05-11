@@ -8,6 +8,10 @@
         {
             "src": "templates/*",
             "use": "@vercel/static"
+        },
+        {
+            "src": "static/**",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
@@ -19,10 +23,5 @@
             "src": "/(.*)",
             "dest": "app.py"
         }
-    ],
-    "env": {
-        "FLASK_SECRET_KEY": "your-secret-key-here",
-        "ADMIN_USERNAME": "admin",
-        "ADMIN_PASSWORD": "furqan123"
-    }
+    ]
 }
